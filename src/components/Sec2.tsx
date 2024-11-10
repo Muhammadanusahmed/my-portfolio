@@ -28,7 +28,7 @@ export default function BackgroundGradientDemo() {
     return(
       
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-      <div className="text-center">
+      <div key={item.id} className="text-center">
             <Image
               src={item.image_url}
               alt="jordans"
