@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "HTML",
+    "image_url": "/html.png"
+  },
+  {
+    "id": 2,
+    "title": "CSS",
+    "image_url": "/css.png"
+  },
+  {
+    "id": 3,
+    "title": "JavaScript",
+    "image_url": "/js.png"
+  },
+  {
+    "id": 4,
+    "title": "TypeScript",
+    "image_url": "/ts.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Next.js",
+    "image_url": "/next.png"
+  },
+  {
+    "id": 6,
+    "title": "Tailwind CSS",
+    "image_url": "/tailwind.png"
+  },
+  {
+    "id": 7,
+    "title": "Figma",
+    "image_url": "/figma.png"
+  },
+  {
+    "id": 8,
+    "title": "Illustrator",
+    "image_url": "/ai.png"
+  },
+  {
+    "id": 9,
+    "title": "ms.Word",
+    "image_url": "/word.png"
+  },
+  {
+    "id": 10,
+    "title": "ms.Exel",
+    "image_url": "/exel.png"
+  } 
+]
