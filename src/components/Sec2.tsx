@@ -13,37 +13,36 @@ export default function BackgroundGradientDemo() {
   }
 
   return (
-    <div>
+    <div id="experience" className="h-screen max-h-screen">
       <div className="text-center">
         <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
           Core Skills
         </h2>
-        <p className="mt-2 text-3xl pb-10 leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+        <p className="mt-1 text-3xl pb-10 leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
           Development and Designes 
         </p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 justify-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-20 justify-center">
      
-      { Data.map((item: Courses) => {
-    return(
+      { Data.map((item: Courses) => (
       
-        <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-      <div key={item.id} className="text-center">
+        <BackgroundGradient key={item.id} className="rounded-[22px] max-w-sm p-3 sm:p-8 bg-white dark:bg-zinc-900">
+      <div className="text-center">
             <Image
               src={item.image_url}
               alt="jordans"
-              height="130"
-              width="130"
-              className="object-contain text-center"
+              height="120"
+              width="120"
+              className="object-contain "
             />
-            <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200">
+            <p className="text-base sm:text-xl text-black my-2 dark:text-neutral-200">
               {item.title}
             </p>
           </div>
        </BackgroundGradient>
   
     )
-  })};
+  )};
     
       
 </div>

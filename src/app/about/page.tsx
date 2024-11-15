@@ -6,7 +6,7 @@ function MusicSchoolContactUs() {
  
 
   return (
-    <div className=" bg-gray-100 dark:bg-gray-900 pb-24 py-12 relative">
+    <div className="min-h-screen pt-36 bg-gray-100 dark:bg-gray-900 pb-24 py-12">
      
       <BackgroundBeams/>
   

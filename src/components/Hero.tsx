@@ -1,9 +1,9 @@
 import Image from "next/image";
 function Hero (){
   return (
-   <div className="max-h-screen grid grid-cols-2 h-screen block-inline">
-    <div className="row-cols-8 relative max-w-2xl mx-auto p-4">
-        <h1 className="relative z-10 text-7xl md:text-6xl md:mt-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
+   <div className="max-h-screen grid mt-10 grid-cols-2 align-middle h-screen block-inline">
+    <div className="row-cols-8 relative  max-w-2xl mx-auto p-4">
+        <h1 className="relative z-10 text-7xl pt-20 md:text-6xl md:mt-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold">
           frontend developer
         </h1>
        
@@ -18,7 +18,7 @@ function Hero (){
     <div className="row-span-2 ">
       <Image 
         src="/hero.jpg" 
-        className="rounded-lg ml-10 focus:ring-2 border-4 border-teal-600"
+        className="rounded-lg ml-10 mt-24 focus:ring-2 border-4 border-teal-600"
         alt="hero" 
         width={500} 
         height={500} />
