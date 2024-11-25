@@ -12,15 +12,7 @@ export default function BackgroundGradientDemo() {
     image_url: string;
   }
 
-  function LimitedData(){
-    if (screen.width < 768) {
 
-      let mobData = Data.filter((item: Courses) => item.id <= 6); 
-      return mobData;
-    } else {
-      return Data;
-    }
-  } 
 
   return (
     <div className="pb-24 border-b-2 border-teal-600">
