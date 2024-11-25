@@ -12,37 +12,44 @@ export default function BackgroundGradientDemo() {
     image_url: string;
   }
 
+  function LimitedData(){
+    if (screen.width < 768) {
+
+      let mobData = Data.filter((item: Courses) => item.id <= 6); 
+      return mobData;
+    } else {
+      return Data;
+    }
+  } 
+
   return (
-    <div id="experience" className="h-screen max-h-screen">
-      <div className="text-center">
-        <h2 className="text-base text-teal-600 font-semibold tracking-wide uppercase">
-          Core Skills
-        </h2>
-        <p className="mt-1 text-3xl pb-10 leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
-          Development and Designes 
-        </p>
-      </div>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 px-20 justify-center">
+    <div className="pb-24 border-b-2 border-teal-600">
+      
+        <h1 id="experience" className="text-2xl md:text-3xl px-4 text-center pb-4 font-extrabold text-white">
+          MY CORE DEVELOPMENT SKILLS
+        </h1>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-12 gap-y-4 md:gap-x-12 md:gap-y-8 px-10 md:px-20 justify-center">
      
       { Data.map((item: Courses) => (
       
-        <BackgroundGradient key={item.id} className="rounded-[22px] max-w-sm p-3 sm:p-8 bg-white dark:bg-zinc-900">
-      <div className="text-center">
+        <BackgroundGradient key={item.id} className="rounded-[22px] min-w-sm md:min-w-md p-3 lg:p-6 bg-white dark:bg-zinc-900">
+      <div className="flex flex-col justify-center text-center">
             <Image
               src={item.image_url}
               alt="jordans"
               height="120"
               width="120"
-              className="object-contain "
+              className="rounded-md"
             />
-            <p className="text-base sm:text-xl text-black my-2 dark:text-neutral-200">
+            <p className="text-xl text-black mt-1 md:mt-3 dark:text-neutral-200">
               {item.title}
             </p>
           </div>
        </BackgroundGradient>
   
     )
-  )};
+  )}
     
       
 </div>

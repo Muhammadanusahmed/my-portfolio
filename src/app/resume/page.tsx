@@ -24,34 +24,30 @@ const JPGToPDFConverter: React.FC = () => {
 
     pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, pdfHeight);
     pdf.save('download.pdf');  // PDF download
-
-    // for chacking path for using pt-36 tailwind property 
-    // const currentPath = window.location.pathname;
-    // const isOnResumePage = currentPath === '/resume';
   };
 
   return (
    
 
-<div className="min-h-screen border-2 border-teal-600 border-x-0 border-b-0 max-h-screen grid grid-cols-2 py-6 grid-flow-col block-inline" >
-<div className="row-cols-8 relative max-w-2xl mx-auto p-4 pb-0">
-<h1 className="md:text-4xl font-sans font-bold mb-8 text-white max-w-lg pt-5 mx-auto my-2 text-sm text-center relative z-10">
+<div className="min-h-screen border-2 px-auto md:px-16 md:gap-44 border-teal-600 border-x-0 mt-10 border-b-0 flex flex-col-reverse md:flex-row md:items-center md:block-inline" >
+
+<div>
+<h1 className="hidden md:block md:text-4xl font-sans font-bold mb-8 text-white max-w-lg my-2 text-sm text-center z-10">
     UPDATED RESUME</h1>  
-<h1 className="md:text-2xl italic bold font-sans font-bold mb-8 underline drop-shadow-xl shadow-white text-teal-500 max-w-lg pt-5 mx-auto my-2 text-sm text-center relative z-10">
-    RESUME SETUPS BY MUHAMMAD ANUS AHMED</h1>  
-<h1 className="md:text-1xl font-bold mb-8 align-middle text-slate-200 max-w-lg pt-5 mx-auto my-4 text-sm text-center relative z-10">
+<h1 className="hidden md:block md:text-2xl italic bold font-sans font-bold mb-8 underline drop-shadow-xl shadow-white text-teal-500 max-w-lg pt-5 my-2 text-sm text-center z-10">
+    RESUME SETUP BY MUHAMMAD ANUS AHMED</h1>  
+<h1 className="hidden md:block md:text-1xl font-bold mb-8 align-middle text-slate-200 max-w-lg pt-5 my-4 text-sm text-center relative z-10">
     if you want to download my resume click on the button</h1>  
    
     <button
         onClick={handleDownloadPDF}
-        className="flex px-4 py-2 align-middle bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
+        className="flex px-4 py-2 mb-12 align-middle mx-auto md:mx-0 bg-blue-500 hover:bg-blue-600 text-white rounded-lg"
       >
         Download as PDF
       </button>
     
 </div>
-
-<div className="row-span-2 justify-end">
+<div className="mb-6 md:my-12 row-span-2 mx-auto">
 <Image
         ref={imageRef}
         src="/resume.jpg"
@@ -60,6 +56,9 @@ const JPGToPDFConverter: React.FC = () => {
         height={500}
         className="max-w-md hover:shadow-2xl shadow-white"
       /></div>
+
+<h1 className="md:hidden text-2xl font-sans font-bold mb-8 text-white max-w-lg my-2 text-center z-10">
+UPDATED RESUME</h1>  
 </div>
    );
  };

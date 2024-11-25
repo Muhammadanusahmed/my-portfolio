@@ -1,19 +1,14 @@
 'use client';
 import { BackgroundBeams } from "@/components/ui/background-beams";
-
-
 function MusicSchoolContactUs() {
- 
 
   return (
-    <div className="min-h-screen pt-36 bg-gray-100 dark:bg-gray-900 pb-24 py-12">
+    <div className="min-h-screen pt-32 lg:36 pb-12 bg-gray-100 dark:bg-gray-900">
      
       <BackgroundBeams/>
   
        <div className="max-w-4xl mx-auto px-4 relative z-10">
-      
-    
-        <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">
+        <h1 className="text-4xl md:text-7xl text-center font-sans font-bold mb-8 text-white">
           About Us
         </h1>
         <p className="text-neutral-400 mx-auto my-2 text-sm text-center space-y-4 mt-4">

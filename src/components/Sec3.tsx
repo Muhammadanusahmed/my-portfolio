@@ -26,13 +26,13 @@ export default function CardHoverEffectDemo() {
   ];
   return (
     <section id="sec5" className="p-12 bg-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl sm:px-6">
         <div className="text-center">
-          <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+          <p className="mt-2 leading-8 font-extrabold tracking-tight text-white text-4xl">
             My Services
           </p>
         </div>
-        <div className="max-w-5xl mx-auto px-8">
+        <div className="max-w-5xl mx-auto">
           <HoverEffect
             items={featuredWebinars.map((webinar) => ({
               title: webinar.title,
@@ -43,7 +43,7 @@ export default function CardHoverEffectDemo() {
 
           <div className="mt-10 text-center">
             <Link
-              href={"/"}
+              href="#experience"
               className="px-4 py-2 rounded-full  text-neutral-700 border-2 border-black bg-cyan-950 hover:bg-gray-100 transition duration-200"
             >
               See What Tools I Use

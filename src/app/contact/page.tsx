@@ -3,10 +3,10 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 function MusicSchoolContactUs() {
 
   return (
-    <div className="min-h-screen border-2 border-teal-600 border-x-0 bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
+    <div className=" border-2 border-teal-600 border-x-0 bg-gray-100 dark:bg-gray-900 py-12 pt-36 relative">
       <BackgroundBeams/>
        <div className="max-w-2xl mx-auto p-4 relative z-10">
-        <h1 className="text-lg md:text-7xl text-center font-sans font-bold mb-8 text-white">
+        <h1 className="text-4xl lg:text-7xl text-center font-sans font-bold mb-8 text-white">
           Contact Us
         </h1>
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center">
